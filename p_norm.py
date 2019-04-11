@@ -2,10 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-#We are assuming norm value is 1 and try to viosulize it 
+#We are assuming norm value is 1 and try to visualize it 
 norm_value = 1
 
-#x values
+#Intial values
 start = -1
 stop = 1
 steps = 10000
@@ -20,8 +20,8 @@ def p_norm(x1,p):
         x2.append(temp_x2)
         negative_x2.append(-temp_x2)
 
-    x2 = x2 + negative_x2 #aDDING NEGATIVE VALUES IN THE END  
-    x1 = np.append(x1,x1) #Settlement for plotting
+    x2 = x2 + negative_x2 #ADDING NEGATIVE VALUES IN THE END  
+    x1 = np.append(x1,x1) #Settlement for plotting :)
 
     plt.scatter(x1,x2)
 
